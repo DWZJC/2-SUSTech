@@ -1,5 +1,5 @@
 ## KMP
-```
+```java
 	public static boolean computeByKMP(char[] cS, int sizeS, char[] cP, int sizeP) {
 		int i = 0; // 遍历test
 		int j = 0; // 遍历pattern
