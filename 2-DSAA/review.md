@@ -1,4 +1,4 @@
-##KMP
+## KMP
 ```
 	public static boolean computeByKMP(char[] cS, int sizeS, char[] cP, int sizeP) {
 		int i = 0; // 遍历test
@@ -47,7 +47,7 @@
 		return move;
 	}
 ```
-##Krusca
+## Krusca
 ```java
 	public static int KRUSKAL(int[] V, Edge[] E, int[] parent) {
 		MSTEdges = new ArrayList<>();
