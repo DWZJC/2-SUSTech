@@ -1,12 +1,11 @@
 ## Min-Heap
-···java
-Queue<Integer> priorityQueue = new PriorityQueue<Integer>(ini_size, new Comparator<Integer>() {
+```java
+	Queue<Integer> priorityQueue = new PriorityQueue<Integer>(ini_size, new Comparator<Integer>() {
 				public int compare(Integer I1, Integer I2) {
 					return I1 - I2;
 				}
 			});
 ```
-
 ## KMP
 ```java
 	public static boolean computeByKMP(char[] cS, int sizeS, char[] cP, int sizeP) {
@@ -283,8 +282,10 @@ private static void initial(int n) {
 		}
 
 		/**
-		 * 中序非递归遍历： 1）对于任意节点current，若该节点不为空则将该节点压栈，并将左子树节点置为current，重复此操作，直到current为空。
-		 * 2）若左子树为空，栈顶节点出栈，访问节点后将该节点的右子树置为current 3) 重复1、2步操作，直到current为空且栈内节点为空。
+		 * 中序非递归遍历： 1）对于任意节点current，若该节点不为空则将该节点压栈，并将左子树节点置为current，
+		 	重复此操作，直到current为空。
+		 * 2）若左子树为空，栈顶节点出栈，访问节点后将该节点的右子树置为current 3) 
+		 	重复1、2步操作，直到current为空且栈内节点为空。
 		 */
 		public void inOrderByStack() {
 			System.out.print("中序非递归遍历:");
@@ -324,8 +325,10 @@ private static void initial(int n) {
 
 		/**
 		 * 前序非递归遍历：
-		 * 1）对于任意节点current，若该节点不为空则访问该节点后再将节点压栈，并将左子树节点置为current，重复此操作，直到current为空。
-		 * 2）若左子树为空，栈顶节点出栈，将该节点的右子树置为current 3) 重复1、2步操作，直到current为空且栈内节点为空。
+		 * 1）对于任意节点current，若该节点不为空则访问该节点后再将节点压栈，并将左子树节点置为current，
+		 	重复此操作，直到current为空。
+		 * 2）若左子树为空，栈顶节点出栈，将该节点的右子树置为current 3) 
+		 	重复1、2步操作，直到current为空且栈内节点为空。
 		 */
 		public void preOrderByStack() {
 			System.out.print("前序非递归遍历:");
@@ -347,7 +350,9 @@ private static void initial(int n) {
 		}
 
 		/**
-		 * //后序遍历(递归)： 1、调用自身来遍历节点的左子树 2、调用自身来遍历节点的右子树 3、访问这个节点
+		 * //后序遍历(递归)： 1、调用自身来遍历节点的左子树 	
+		 		     2、调用自身来遍历节点的右子树 
+				     3、访问这个节点
 		 */
 		public void postOrderTraverse() {
 			System.out.print("后序遍历:");
@@ -366,9 +371,10 @@ private static void initial(int n) {
 
 		/**
 		 * 后序非递归遍历：
-		 * 1）对于任意节点current，若该节点不为空则访问该节点后再将节点压栈，并将左子树节点置为current，重复此操作，直到current为空。
-		 * 2）若左子树为空，取栈顶节点的右子树，如果右子树为空或右子树刚访问过，则访问该节点，并将preNode置为该节点 3)
-		 * 重复1、2步操作，直到current为空且栈内节点为空。
+		 * 1）对于任意节点current，若该节点不为空则访问该节点后再将节点压栈，并将左子树节点置为current，
+		 	重复此操作，直到current为空。
+		 * 2）若左子树为空，取栈顶节点的右子树，如果右子树为空或右子树刚访问过，则访问该节点，并将preNode置为该节点 
+		 * 3) 重复1、2步操作，直到current为空且栈内节点为空。
 		 */
 		public void postOrderByStack() {
 			System.out.print("后序非递归遍历:");
